@@ -72,23 +72,25 @@ O **Farmacamp** é um projeto de e-commerce focado no setor farmacêutico, ofere
 
 ```
 farmacia/
-├── farmacia/
-│   ├── index.html          # Página inicial
-│   ├── produtos.html       # Catálogo de produtos
-│   ├── carrinho.html       # Carrinho de compras
-│   ├── contato.html        # Página de contato
-│   ├── vantagens.html      # Página de vantagens
-│   ├── style.css           # Estilos principais
-│   ├── produtos.css        # Estilos da página de produtos
-│   ├── carrinho.css        # Estilos do carrinho
-│   ├── contato.css         # Estilos da página de contato
-│   ├── vantagens.css       # Estilos da página de vantagens
-│   ├── script.js           # JavaScript principal
-│   └── img/                # Imagens do projeto
-│       ├── baner1.png
-│       ├── paracetamol.png
-│       ├── dipirona.png
-│       └── ... (outras imagens)
+├── html/
+│   ├── index.html
+│   ├── produtos.html
+│   ├── carrinho.html
+│   ├── contato.html
+│   └── vantagens.html
+├── css/
+│   ├── style.css
+│   ├── produtos.css
+│   ├── carrinho.css
+│   ├── contato.css
+│   └── vantagens.css
+├── js/
+│   └── script.js
+├── img/
+│   ├── baner1.png
+│   ├── paracetamol.png
+│   ├── dipirona.png
+│   └── ... (outras imagens)
 ```
 
 ## 🚀 Como Executar
@@ -189,7 +191,7 @@ O site é totalmente responsivo e funciona em:
 
 ## 🎨 Design Features
 
-- **Paleta de Cores**: Tons de azul e branco (confiança e saúde)
+- **Paleta de Cores**: Tons de vermelho amarelo e branco 
 - **Tipografia**: Poppins (moderna e legível)
 - **Ícones**: Font Awesome (profissionais)
 - **Animações**: Transições suaves
@@ -228,9 +230,9 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 **Maicon** - Desenvolvedor Full Stack
 
-- 📧 Email: [seu-email@exemplo.com]
-- 🔗 LinkedIn: [seu-linkedin]
-- 🌐 Portfolio: [seu-portfolio]
+- 📧 Email: [maiconpinheirov3@gmail.com]
+- 🔗 LinkedIn: [www.linkedin.com/in/maicon-pinheiro-]
+- 🌐 Portfolio: [http://127.0.0.1:5500/index.html]
 
 ---
 
