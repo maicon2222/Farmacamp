@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Minha Conta - Farmacamp</title>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/minha-conta.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="logo-container">
+<h1>Farmacamp</h1>
+<!-- <p>Saúde com qualidade e confiança</p> -->
+</div>
+<nav class="header-menu">
+<a href="index.html">Início</a>
+<a href="produtos.html">Produtos</a>
+<a href="vantagens.html">Vantagens</a>
+<a href="contato.html">Contato</a>
+<!-- <a href="blog.html">Blog</a> -->
+<!-- <a href="sobre.html">Sobre</a> -->
+</nav>
+<div class="search-container">
+<input placeholder="Pesquisar..." type="text"/>
+<button class="search-btn" type="submit">
+<i class="fa fa-search"></i> <!-- Ícone de lupa -->
+</button>
+</div>
+<div class="user-cart-container">
+<a class="user-account" href="minha-conta.html">
+<i class="fa fa-user"></i> Minha Conta
+        </a>
+<a class="user-cart" href="carrinho.html">
+<i class="fa fa-shopping-cart"></i> Meu Carrinho
+        </a>
+</div>
+</header>
+<!-- HERO DA CONTA -->
+<section class="conta-hero" data-aos="fade-down">
+<div class="conta-hero-content">
+<div class="user-avatar">
+<img src="../img/neto.jpg" alt="Foto do usuário" id="user-avatar">
+<div class="avatar-edit">
+<i class="fas fa-camera"></i>
+</div>
+</div>
+<div class="user-info">
+<h1>Bem-vindo(a), <span id="user-name">Craque neto</span>!</h1>
+<p>Gerencie sua conta, pedidos e preferências</p>
+<div class="user-stats">
+<span class="stat-item"><i class="fas fa-shopping-bag"></i> <strong>12</strong> pedidos</span>
+<span class="stat-item"><i class="fas fa-heart"></i> <strong>8</strong> favoritos</span>
+<span class="stat-item"><i class="fas fa-star"></i> <strong>4.8</strong> avaliação</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="conta-main">
+<div class="conta-container">
+<!-- MENU LATERAL -->
+<aside class="conta-sidebar" data-aos="fade-right">
+<nav class="sidebar-nav">
+<a class="nav-item active" data-tab="dashboard" href="#dashboard">
+<i class="fas fa-tachometer-alt"></i>
+<span>Dashboard</span>
+</a>
+<a class="nav-item" data-tab="perfil" href="#perfil">
+<i class="fas fa-user-edit"></i>
+<span>Meu Perfil</span>
+</a>
+<a class="nav-item" data-tab="pedidos" href="#pedidos">
+<i class="fas fa-shopping-bag"></i>
+<span>Meus Pedidos</span>
+<span class="badge">3</span>
+</a>
+<a class="nav-item" data-tab="enderecos" href="#enderecos">
+<i class="fas fa-map-marker-alt"></i>
+<span>Endereços</span>
+</a>
+<a class="nav-item" data-tab="favoritos" href="#favoritos">
+<i class="fas fa-heart"></i>
+<span>Favoritos</span>
+</a>
+<a class="nav-item" data-tab="receitas" href="#receitas">
+<i class="fas fa-prescription"></i>
+<span>Minhas Receitas</span>
+</a>
+<a class="nav-item" data-tab="configuracoes" href="#configuracoes">
+<i class="fas fa-cog"></i>
+<span>Configurações</span>
+</a>
+<a class="nav-item" data-tab="ajuda" href="#ajuda">
+<i class="fas fa-question-circle"></i>
+<span>Ajuda</span>
+</a>
+</nav>
+<div class="sidebar-footer">
+<button class="btn-sair" id="btn-sair">
+<i class="fas fa-sign-out-alt"></i>
+            Sair da Conta
+          </button>
+</div>
+</aside>
+<!-- CONTEÚDO DAS ABAS -->
+<div class="conta-content">
+<!-- DASHBOARD -->
+<section class="tab-content active" data-aos="fade-up" id="dashboard">
+<div class="content-header">
+<h2><i class="fas fa-tachometer-alt"></i> Dashboard</h2>
+<p>Visão geral da sua conta e atividades recentes</p>
+</div>
+<!-- CARDS DE RESUMO -->
+<div class="dashboard-cards">
+<div class="card-resumo">
+<div class="card-icon">
+<i class="fas fa-shopping-bag"></i>
+</div>
+<div class="card-info">
+<h3>12</h3>
+<p>Pedidos Realizados</p>
+</div>
+</div>
+<div class="card-resumo">
+<div class="card-icon">
+<i class="fas fa-heart"></i>
+</div>
+<div class="card-info">
+<h3>8</h3>
+<p>Produtos Favoritos</p>
+</div>
+</div>
+<div class="card-resumo">
+<div class="card-icon">
+<i class="fas fa-star"></i>
+</div>
+<div class="card-info">
+<h3>4.8</h3>
+<p>Avaliação Média</p>
+</div>
+</div>
+<div class="card-resumo">
+<div class="card-icon">
+<i class="fas fa-gift"></i>
+</div>
+<div class="card-info">
+<h3>150</h3>
+<p>Pontos Acumulados</p>
+</div>
+</div>
+</div>
+<!-- PEDIDOS RECENTES -->
+<div class="dashboard-section">
+<h3><i class="fas fa-clock"></i> Pedidos Recentes</h3>
+<div class="pedidos-recentes">
+<div class="pedido-item">
+<div class="pedido-info">
+<h4>Pedido #2024001</h4>
+<p>Paracetamol, Vitamina C, Protetor Solar</p>
+<span class="pedido-data">15/12/2024</span>
+</div>
+<div class="pedido-status entregue">
+<i class="fas fa-check-circle"></i>
+                  Entregue
+                </div>
+<div class="pedido-valor">R$ 71,30</div>
+</div>
+<div class="pedido-item">
+<div class="pedido-info">
+<h4>Pedido #2024002</h4>
+<p>Dipirona, Álcool Gel, Sabonete</p>
+<span class="pedido-data">12/12/2024</span>
+</div>
+<div class="pedido-status em-transito">
+<i class="fas fa-truck"></i>
+                  Em Trânsito
+                </div>
+<div class="pedido-valor">R$ 45,80</div>
+</div>
+<div class="pedido-item">
+<div class="pedido-info">
+<h4>Pedido #2024003</h4>
+<p>Fralda Pampers, Creme Hidratante</p>
+<span class="pedido-data">10/12/2024</span>
+</div>
+<div class="pedido-status processando">
+<i class="fas fa-cog"></i>
+                  Processando
+                </div>
+<div class="pedido-valor">R$ 56,40</div>
+</div>
+</div>
+</div>
+<!-- PRODUTOS RECOMENDADOS -->
+<!-- <div class="dashboard-section">
+            <h3><i class="fas fa-lightbulb"></i> Recomendados para Você</h3>
+            <div class="produtos-recomendados">
+              <div class="produto-recomendado">
+                <img src="img/vitamina.png" alt="Vitamina D">
+                <h4>Vitamina D 1000UI</h4>
+                <div class="preco">R$ 25,90</div>
+                <button class="btn-adicionar">
+                  <i class="fas fa-cart-plus"></i> Adicionar
+                </button>
+              </div>
+              <div class="produto-recomendado">
+                <img src="img/L'Oréal.png" alt="Shampoo L'Oréal">
+                <h4>Shampoo L'Oréal</h4>
+                <div class="preco">R$ 18,90</div>
+                <button class="btn-adicionar">
+                  <i class="fas fa-cart-plus"></i> Adicionar
+                </button>
+              </div>
+              <div class="produto-recomendado">
+                <img src="img/cimed.png" alt="Suplemento Cimed">
+                <h4>Suplemento Cimed</h4>
+                <div class="preco">R$ 32,50</div>
+                <button class="btn-adicionar">
+                  <i class="fas fa-cart-plus"></i> Adicionar
+                </button>
+              </div>
+            </div>
+          </div> -->
+</section>
+<!-- MEU PERFIL -->
+<section class="tab-content" data-aos="fade-up" id="perfil">
+<div class="content-header">
+<h2><i class="fas fa-user-edit"></i> Meu Perfil</h2>
+<p>Atualize suas informações pessoais</p>
+</div>
+<div class="perfil-form">
+<div class="form-row">
+<div class="form-group">
+<label for="nome">Nome Completo</label>
+<input id="nome" required="" type="text" value="Maicon Venancio"/>
+</div>
+<div class="form-group">
+<label for="cpf">CPF</label>
+<input id="cpf" required="" type="text" value="123.456.789-00"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="email">E-mail</label>
+<input id="email" required="" type="email" value="maiconpinheirov3@gmail.com"/>
+</div>
+<div class="form-group">
+<label for="telefone">Telefone</label>
+<input id="telefone" required="" type="tel" value="(19) 99264-5148"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="data-nascimento">Data de Nascimento</label>
+<input id="data-nascimento" required="" type="date" value="2007-11-30"/>
+</div>
+<div class="form-group">
+<label for="genero">Gênero</label>
+<select id="genero">
+<option value="masculino">Masculino</option>
+<option value="feminino">Feminino</option>
+<option value="outro">Outro</option>
+</select>
+</div>
+</div>
+<div class="form-actions">
+<button class="btn-salvar" type="button">
+<i class="fas fa-save"></i> Salvar Alterações
+              </button>
+</div>
+</div>
+</section>
+<!-- MEUS PEDIDOS -->
+<section class="tab-content" data-aos="fade-up" id="pedidos">
+<div class="content-header">
+<h2><i class="fas fa-shopping-bag"></i> Meus Pedidos</h2>
+<p>Histórico completo de suas compras</p>
+</div>
+<div class="pedidos-lista">
+<div class="pedido-card">
+<div class="pedido-header">
+<div class="pedido-numero">
+<h3>Pedido #2024001</h3>
+<span class="pedido-data">15/12/2024 às 14:30</span>
+</div>
+<div class="pedido-status entregue">
+<i class="fas fa-check-circle"></i>
+                  Entregue
+                </div>
+</div>
+<div class="pedido-produtos">
+<div class="produto-pedido">
+<img alt="Paracetamol" src="../img/paracetamol.png"/>
+<div class="produto-info">
+<h4>Paracetamol 500mg</h4>
+<span>Qtd: 2</span>
+</div>
+<div class="produto-preco">R$ 19,80</div>
+</div>
+<div class="produto-pedido">
+<img alt="Vitamina C" src="../img/vitamina C.png"/>
+<div class="produto-info">
+<h4>Vitamina C 1000mg</h4>
+<span>Qtd: 1</span>
+</div>
+<div class="produto-preco">R$ 28,50</div>
+</div>
+<div class="produto-pedido">
+<img alt="Protetor Solar" src="../img/protetor-Solar.png"/>
+<div class="produto-info">
+<h4>Protetor Solar FPS 50</h4>
+<span>Qtd: 1</span>
+</div>
+<div class="produto-preco">R$ 32,90</div>
+</div>
+</div>
+<div class="pedido-footer">
+<div class="pedido-total">
+<span>Total: <strong>R$ 81,20</strong></span>
+</div>
+<div class="pedido-acoes">
+<button class="btn-avaliar">
+<i class="fas fa-star"></i> Avaliar
+                  </button>
+<button class="btn-repetir">
+<i class="fas fa-redo"></i> Repetir Pedido
+                  </button>
+</div>
+</div>
+</div>
+<div class="pedido-card">
+<div class="pedido-header">
+<div class="pedido-numero">
+<h3>Pedido #2024002</h3>
+<span class="pedido-data">12/12/2024 às 09:15</span>
+</div>
+<div class="pedido-status em-transito">
+<i class="fas fa-truck"></i>
+                  Em Trânsito
+                </div>
+</div>
+<div class="pedido-produtos">
+<div class="produto-pedido">
+<img alt="Dipirona" src="../img/dipirona.png"/>
+<div class="produto-info">
+<h4>Dipirona Gotas</h4>
+<span>Qtd: 1</span>
+</div>
+<div class="produto-preco">R$ 7,80</div>
+</div>
+<div class="produto-pedido">
+<img alt="Álcool Gel" src="../img/Álcool Gel.png"/>
+<div class="produto-info">
+<h4>Álcool Gel 500ml</h4>
+<span>Qtd: 2</span>
+</div>
+<div class="produto-preco">R$ 20,00</div>
+</div>
+</div>
+<div class="pedido-footer">
+<div class="pedido-total">
+<span>Total: <strong>R$ 27,80</strong></span>
+</div>
+<div class="pedido-acoes">
+<button class="btn-rastrear">
+<i class="fas fa-map-marker-alt"></i> Rastrear
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ENDEREÇOS -->
+<section class="tab-content" data-aos="fade-up" id="enderecos">
+<div class="content-header">
+<h2><i class="fas fa-map-marker-alt"></i> Meus Endereços</h2>
+<p>Gerencie seus endereços de entrega</p>
+</div>
+<div class="enderecos-container">
+<div class="endereco-card">
+<div class="endereco-header">
+<h3>Endereço Principal</h3>
+<div class="endereco-acoes">
+<button class="btn-editar"><i class="fas fa-edit"></i></button>
+<button class="btn-excluir"><i class="fas fa-trash"></i></button>
+</div>
+</div>
+<div class="endereco-info">
+<p><strong>Yuri alberto</strong></p>
+<p>Neo quimica arena </p>
+<p>São Paulo, SP</p>
+<p>CEP: 01234-567</p>
+<p>Tel: (11) 99999-9999</p>
+</div>
+</div>
+<div class="endereco-card">
+<div class="endereco-header">
+<h3>Endereço Secundário</h3>
+<div class="endereco-acoes">
+<button class="btn-editar"><i class="fas fa-edit"></i></button>
+<button class="btn-excluir"><i class="fas fa-trash"></i></button>
+</div>
+</div>
+<div class="endereco-info">
+<p><strong>Mundial do palmeiras</strong></p>
+<p>Não encontrado</p>
+<p>São Paulo, SP</p>
+<p>CEP: 51</p>
+<p>Tel: (11) 88888-8888</p>
+</div>
+</div>
+<button class="btn-adicionar-endereco">
+<i class="fas fa-plus"></i> Adicionar Novo Endereço
+            </button>
+</div>
+</section>
+<!-- FAVORITOS -->
+<section class="tab-content" data-aos="fade-up" id="favoritos">
+<div class="content-header">
+<h2><i class="fas fa-heart"></i> Meus Favoritos</h2>
+<p>Produtos que você salvou</p>
+</div>
+<div class="favoritos-grid">
+<div class="favorito-card">
+<img alt="Paracetamol" src="../img/paracetamol.png"/>
+<div class="favorito-info">
+<h4>Paracetamol 500mg</h4>
+<div class="favorito-preco">R$ 9,90</div>
+<div class="favorito-acoes">
+<button class="btn-adicionar-carrinho">
+<i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+<button class="btn-remover-favorito">
+<i class="fas fa-heart-broken"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="favorito-card">
+<img alt="Vitamina C" src="../img/vitamina C.png"/>
+<div class="favorito-info">
+<h4>Vitamina C 1000mg</h4>
+<div class="favorito-preco">R$ 28,50</div>
+<div class="favorito-acoes">
+<button class="btn-adicionar-carrinho">
+<i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+<button class="btn-remover-favorito">
+<i class="fas fa-heart-broken"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="favorito-card">
+<img alt="Protetor Solar" src="../img/protetor-Solar.png"/>
+<div class="favorito-info">
+<h4>Protetor Solar FPS 50</h4>
+<div class="favorito-preco">R$ 32,90</div>
+<div class="favorito-acoes">
+<button class="btn-adicionar-carrinho">
+<i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+<button class="btn-remover-favorito">
+<i class="fas fa-heart-broken"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MINHAS RECEITAS -->
+<section class="tab-content" data-aos="fade-up" id="receitas">
+<div class="content-header">
+<h2><i class="fas fa-prescription"></i> Minhas Receitas</h2>
+<p>Gerencie suas receitas médicas</p>
+</div>
+<div class="receitas-container">
+<div class="receita-card">
+<div class="receita-header">
+<h3>Receita #001</h3>
+<span class="receita-data">10/12/2024</span>
+</div>
+<div class="receita-info">
+<p><strong>Médico:</strong> Dr. Craque neto</p>
+<p><strong>Especialidade:</strong> Clínico Geral</p>
+<p><strong>Medicamentos:</strong> Paracetamol 500mg, Dipirona</p>
+</div>
+<div class="receita-acoes">
+<button class="btn-ver-receita">
+<i class="fas fa-eye"></i> Visualizar
+                </button>
+<button class="btn-download">
+<i class="fas fa-download"></i> Download
+                </button>
+</div>
+</div>
+<button class="btn-upload-receita">
+<i class="fas fa-upload"></i> Enviar Nova Receita
+            </button>
+</div>
+</section>
+<!-- CONFIGURAÇÕES -->
+<section class="tab-content" data-aos="fade-up" id="configuracoes">
+<div class="content-header">
+<h2><i class="fas fa-cog"></i> Configurações</h2>
+<p>Personalize sua experiência</p>
+</div>
+<div class="configuracoes-container">
+<div class="config-section">
+<h3>Alterar Senha</h3>
+<div class="form-row">
+<div class="form-group">
+<label for="senha-atual">Senha Atual</label>
+<input id="senha-atual" type="password"/>
+</div>
+<div class="form-group">
+<label for="nova-senha">Nova Senha</label>
+<input id="nova-senha" type="password"/>
+</div>
+<div class="form-group">
+<label for="confirmar-senha">Confirmar Nova Senha</label>
+<input id="confirmar-senha" type="password"/>
+</div>
+</div>
+<button class="btn-alterar-senha">
+<i class="fas fa-key"></i> Alterar Senha
+              </button>
+</div>
+<div class="config-section">
+<h3>Preferências de Notificação</h3>
+<div class="notificacoes-opcoes">
+<label class="checkbox-item">
+<input checked="" type="checkbox"/>
+<span>E-mails promocionais</span>
+</label>
+<label class="checkbox-item">
+<input checked="" type="checkbox"/>
+<span>Status do pedido</span>
+</label>
+<label class="checkbox-item">
+<input type="checkbox"/>
+<span>Newsletter semanal</span>
+</label>
+<label class="checkbox-item">
+<input checked="" type="checkbox"/>
+<span>Lembretes de medicamentos</span>
+</label>
+</div>
+</div>
+<div class="config-section">
+<h3>Privacidade</h3>
+<div class="privacidade-opcoes">
+<label class="checkbox-item">
+<input checked="" type="checkbox"/>
+<span>Compartilhar dados para melhorias</span>
+</label>
+<label class="checkbox-item">
+<input type="checkbox"/>
+<span>Receber ofertas personalizadas</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- AJUDA -->
+<section class="tab-content" data-aos="fade-up" id="ajuda">
+<div class="content-header">
+<h2><i class="fas fa-question-circle"></i> Central de Ajuda</h2>
+<p>Encontre respostas para suas dúvidas</p>
+</div>
+<div class="ajuda-container">
+<div class="faq-section">
+<h3>Perguntas Frequentes</h3>
+<div class="faq-item">
+<div class="faq-pergunta">
+<h4>Como rastrear meu pedido?</h4>
+<i class="fas fa-chevron-down"></i>
+</div>
+<div class="faq-resposta">
+<p>Você pode rastrear seu pedido através do número do pedido na seção "Meus Pedidos" ou através do link enviado por e-mail.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-pergunta">
+<h4>Qual o prazo de entrega?</h4>
+<i class="fas fa-chevron-down"></i>
+</div>
+<div class="faq-resposta">
+<p>O prazo de entrega varia de 1 a 3 dias úteis para a região de São Paulo e de 3 a 7 dias úteis para outras regiões.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-pergunta">
+<h4>Como solicitar reembolso?</h4>
+<i class="fas fa-chevron-down"></i>
+</div>
+<div class="faq-resposta">
+<p>Entre em contato conosco através do chat online ou pelo telefone (11) 94575-2271 para solicitar o reembolso.</p>
+</div>
+</div>
+</div>
+<div class="contato-ajuda">
+<h3>Precisa de mais ajuda?</h3>
+<div class="contato-opcoes">
+<a class="contato-item" href="contato.html">
+<i class="fas fa-comments"></i>
+<span>Chat Online</span>
+</a>
+<a class="contato-item" href="tel:11945752271">
+<i class="fas fa-phone"></i>
+<span>(11) 94575-2271</span>
+</a>
+<a class="contato-item" href="mailto:contato@farmacamp.br">
+<i class="fas fa-envelope"></i>
+<span>contato@farmacamp.br</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- FOOTER -->
+<section class="sectionFooter">
+<div id="footer1">
+<ul>
+<p class="central"> Serviços </p>
+<li> <a href="#"> Farmacêuticos Farmacamp </a></li>
+<li> <a href="#"> Nossas Lojas</a></li>
+<li><a href="#"> Progamas dos laboratórios</a></li>
+<p class="central"> Institucional </p>
+<li> <a href="#"> Nossa História </a></li>
+<li> <a href="#"> Logística Reversa de Medicamentos</a></li>
+<li><a href="#">Trabalhe conosco</a></li>
+<li><a href="#">Imprensa</a></li>
+<li><a href="#">Política de Privacidade</a></li>
+<li><a href="#">Política de cookies</a></li>
+</ul>
+</div>
+<div id="footer2">
+<ul>
+<p class="central"> Minha Conta </p>
+<li> <a href="#"> Como Comprar no Site </a></li>
+<li> <a href="#"> Formas de pagamentos disponíveis</a></li>
+<li><a href="#"> Prazo de reembolso</a></li>
+<li><a href="#">Troca ou devolução</a></li>
+<p class="central">Outras Informações </p>
+<li> <a href="#"> Logística reversa</a></li>
+<li><a href="#"> Regulamentações da ANVISA</a></li>
+<li><a href="#"> Manual do usuário</a></li>
+</ul>
+</div>
+<div id="footer3">
+<ul>
+<p class="central"> Central de Atendimento </p>
+<li> <img alt=" ícone de telefone " src="https://img.icons8.com/material-sharp/24/000000/no-phones--v1.png"/> (11) 94575-2271</li>
+<li><img alt="ícone de email " src="https://img.icons8.com/material-outlined/24/000000/email.png"/> contato@Farmacamp.br </li>
+<li><img alt="ícone de servidor " src="https://img.icons8.com/material/24/000000/internet.png"/> www.farmacamp.com.br </li>
+<li><img alt="ícone de mapa" src="https://img.icons8.com/material/24/000000/marker--v1.png"/><a href="#"> Rua senac, Campinas - São paulo, Brasil, CEP 00000-000</a></li>
+<p class="central" id="formasPg"> Formas de pagamento:</p>
+<div class="pagamento">
+<li><img alt="ícone do cartão " src="https://img.icons8.com/fluency/48/000000/mastercard.png"/></li>
+</div>
+<div class="pagamento">
+<li><img alt="ícone do cartão" src="https://img.icons8.com/fluency/48/000000/visa.png"/></li>
+</div>
+<div class="pagamento">
+<li><img src="https://img.icons8.com/fluency/48/000000/card-in-use-1.png"/></li>
+</div>
+</ul>
+</div>
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Inicializar AOS
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Sistema de abas
+    document.addEventListener('DOMContentLoaded', function() {
+      const navItems = document.querySelectorAll('.nav-item');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      navItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Remove active de todos os itens
+          navItems.forEach(nav => nav.classList.remove('active'));
+          tabContents.forEach(tab => tab.classList.remove('active'));
+          
+          // Adiciona active ao item clicado
+          this.classList.add('active');
+          
+          // Mostra o conteúdo correspondente
+          const targetTab = this.getAttribute('data-tab');
+          document.getElementById(targetTab).classList.add('active');
+        });
+      });
+
+      // FAQ Accordion
+      const faqPerguntas = document.querySelectorAll('.faq-pergunta');
+      faqPerguntas.forEach(pergunta => {
+        pergunta.addEventListener('click', function() {
+          const resposta = this.nextElementSibling;
+          const icon = this.querySelector('i');
+          
+          if (resposta.style.maxHeight) {
+            resposta.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+          } else {
+            resposta.style.maxHeight = resposta.scrollHeight + 'px';
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+
+      // Botão sair
+      document.getElementById('btn-sair').addEventListener('click', function() {
+        if (confirm('Tem certeza que deseja sair da sua conta?')) {
+          window.location.href = 'index.html';
+        }
+      });
+
+      // Botões de ação
+      document.addEventListener('click', function(e) {
+        // Adicionar ao carrinho
+        if (e.target.classList.contains('btn-adicionar') || 
+            e.target.classList.contains('btn-adicionar-carrinho')) {
+          const produto = e.target.closest('.produto-recomendado, .favorito-card');
+          const nome = produto.querySelector('h4').textContent;
+          const preco = produto.querySelector('.preco, .favorito-preco').textContent.replace('R$ ', '').replace(',', '.');
+          
+          const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push({
+            nome: nome,
+            preco: preco,
+            quantidade: 1
+          });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+          
+          // Feedback visual
+          e.target.innerHTML = '<i class="fas fa-check"></i> Adicionado';
+          e.target.style.background = '#4caf50';
+          setTimeout(() => {
+            e.target.innerHTML = '<i class="fas fa-cart-plus"></i> Adicionar';
+            e.target.style.background = '';
+          }, 2000);
+        }
+
+        // Remover favorito
+        if (e.target.classList.contains('btn-remover-favorito')) {
+          const card = e.target.closest('.favorito-card');
+          card.style.animation = 'slideOut 0.3s ease-out';
+          setTimeout(() => {
+            card.remove();
+          }, 300);
+        }
+        
+        document.querySelectorAll(".faq-pergunta").forEach(pergunta => {
+  pergunta.addEventListener("click", () => {
+    const item = pergunta.parentElement;
+
+    // Fecha os outros antes de abrir o atual
+    document.querySelectorAll(".faq-item").forEach(faq => {
+      if (faq !== item) {
+        faq.classList.remove("active");
+      }
+    });
+
+    item.classList.toggle("active");
+  });
+});
+
+
+
+
+        // Salvar perfil
+        if (e.target.classList.contains('btn-salvar')) {
+          e.target.innerHTML = '<i class="fas fa-check"></i> Salvo!';
+          e.target.style.background = '#4caf50';
+          setTimeout(() => {
+            e.target.innerHTML = '<i class="fas fa-save"></i> Salvar Alterações';
+            e.target.style.background = '';
+          }, 2000);
+        }
+      });
+    });
+
+    // CSS Animation
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(-100%); opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html> 

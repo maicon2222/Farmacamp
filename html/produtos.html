@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Produtos - Farmacamp</title>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/produtos.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="logo-container">
+<h1>Farmacamp</h1>
+<!-- <p>Saúde com qualidade e confiança</p> -->
+</div>
+<nav class="header-menu">
+<a href="index.html">Início</a>
+<a href="produtos.html">Produtos</a>
+<a href="vantagens.html">Vantagens</a>
+<a href="contato.html">Contato</a>
+<!-- <a href="blog.html">Blog</a> -->
+<!-- <a href="sobre.html">Sobre</a> -->
+</nav>
+<div class="search-container">
+<input placeholder="Pesquisar..." type="text"/>
+<button class="search-btn" type="submit">
+<i class="fa fa-search"></i> <!-- Ícone de lupa -->
+</button>
+</div>
+<div class="user-cart-container">
+<a class="user-account" href="minha-conta.html">
+<i class="fa fa-user"></i> Minha Conta
+        </a>
+<a class="user-cart" href="carrinho.html">
+<i class="fa fa-shopping-cart"></i> Meu Carrinho
+        </a>
+</div>
+</header>
+<!-- <a href="https://wa.me/5511999999999" class="whatsapp-button" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i> Atendimento Rápido
+</a> -->
+<!-- HERO de produtos -->
+<section class="produtos-hero" data-aos="fade-up">
+<div class="produtos-hero-content">
+<i class="fas fa-capsules"></i>
+<h1>Catálogo de Produtos</h1>
+<p>Encontre medicamentos, saúde, beleza e bem-estar com ofertas exclusivas!</p>
+<span class="produtos-hero-promo"><i class="fas fa-bolt"></i> Frete grátis acima de R$99!</span>
+</div>
+</section>
+<!-- FILTROS aprimorados -->
+<section class="filtro-produtos" data-aos="fade-up" data-aos-delay="100">
+<div class="filtros-row">
+<div class="filtro-item">
+<i class="fas fa-list"></i>
+<select aria-label="Filtrar por categoria">
+<option value="">Categoria</option>
+<option>Vitaminas</option>
+<option>Analgésicos</option>
+<option>Antibióticos</option>
+<option>Cosméticos</option>
+</select>
+</div>
+<div class="filtro-item">
+<i class="fas fa-dollar-sign"></i>
+<select aria-label="Filtrar por preço">
+<option value="">Preço</option>
+<option>Menor preço</option>
+<option>Maior preço</option>
+</select>
+</div>
+<div class="filtro-item">
+<i class="fas fa-star"></i>
+<select aria-label="Filtrar por avaliação">
+<option value="">Avaliação</option>
+<option>4 estrelas ou mais</option>
+<option>3 estrelas ou mais</option>
+</select>
+</div>
+<button aria-label="Limpar filtros" class="filtro-limpar"><i class="fas fa-times"></i> Limpar</button>
+</div>
+</section>
+<!-- GRID DE PRODUTOS moderno -->
+<section class="product-grid" data-aos="fade-up" data-aos-delay="200">
+<!-- Exemplo de produto -->
+<div class="product-card" tabindex="0">
+<span class="tag oferta">Oferta</span>
+<img alt="Paracetamol 500mg" src="../img/paracetamol.png"/>
+<h3>Paracetamol 500mg</h3>
+<div class="avaliacao"><span class="estrelas">★★★★★</span> <span class="numero-avaliacoes">(42)</span></div>
+<div class="preco">
+<span class="preco-antigo">R$14,90</span>
+<span class="preco-novo">R$9,90</span>
+</div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="9.90" data-produto="Paracetamol 500mg"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Paracetamol 500mg"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<span class="tag novo">Novo</span>
+<img alt="Tadalafila" src="../img/tadala.png"/>
+<h3>Tadalafila</h3>
+<div class="avaliacao"><span class="estrelas">★★★★☆</span> <span class="numero-avaliacoes">(12)</span></div>
+<div class="preco"><span class="preco-novo">R$12,50</span></div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="12.50" data-produto="Tadalafila"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Tadalafila"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<img alt="Dipirona Gotas" src="../img/dipirona.png"/>
+<h3>Dipirona Gotas</h3>
+<div class="avaliacao"><span class="estrelas">★★★★☆</span> <span class="numero-avaliacoes">(31)</span></div>
+<div class="preco"><span class="preco-novo">R$7,80</span></div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="7.80" data-produto="Dipirona Gotas"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Dipirona Gotas"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<span class="tag oferta">Oferta</span>
+<img alt="Shampo" src="../img/transferir (5).jpg"/>
+<h3>Shampo</h3>
+<div class="avaliacao"><span class="estrelas">★★★★★</span> <span class="numero-avaliacoes">(19)</span></div>
+<div class="preco">
+<span class="preco-antigo">R$29,90</span>
+<span class="preco-novo">R$14,90</span>
+</div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="14.90" data-produto="Shampo"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Shampo"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<span class="tag desconto">-9%</span>
+<img alt="Sabonete Cetaphil" src="../img/sabonete em barra.png"/>
+<h3>Sabonete Em Barra Cetaphil</h3>
+<div class="avaliacao"><span class="estrelas">★★★★★</span> <span class="numero-avaliacoes">(23)</span></div>
+<div class="preco">
+<span class="preco-antigo">R$34,90</span>
+<span class="preco-novo">R$31,59</span>
+</div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="31.59" data-produto="Cetaphil 127g"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Cetaphil 127g"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<img alt="Antigripal 500mg" src="../img/antigripal.png"/>
+<h3>Antigripal 500mg</h3>
+<div class="avaliacao"><span class="estrelas">★★★☆☆</span> <span class="numero-avaliacoes">(8)</span></div>
+<div class="preco"><span class="preco-novo">R$18,00</span></div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="18.00" data-produto="Antigripal 500mg"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Antigripal 500mg"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<img alt="Creme Hidratante" src="../img/creme hidratante.png"/>
+<h3>Creme Hidratante</h3>
+<div class="avaliacao"><span class="estrelas">★★★★☆</span> <span class="numero-avaliacoes">(15)</span></div>
+<div class="preco"><span class="preco-novo">R$22,50</span></div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="22.50" data-produto="Creme Hidratante"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Creme Hidratante"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<img alt="Pomada Anti-inflamatória" src="../img/pomada Anti-inflamatoria.png"/>
+<h3>Pomada Anti-inflamatória</h3>
+<div class="avaliacao"><span class="estrelas">★★★☆☆</span> <span class="numero-avaliacoes">(6)</span></div>
+<div class="preco"><span class="preco-novo">R$15,90</span></div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="15.90" data-produto="Pomada Anti-inflamatória"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Pomada Anti-inflamatória"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<img alt="Álcool Gel 500ml" src="../img/Álcool Gel.png"/>
+<h3>Álcool Gel 500ml</h3>
+<div class="avaliacao"><span class="estrelas">★★★★★</span> <span class="numero-avaliacoes">(27)</span></div>
+<div class="preco"><span class="preco-novo">R$10,00</span></div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="10.00" data-produto="Álcool Gel 500ml"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Álcool Gel 500ml"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<!-- NOVOS PRODUTOS ADICIONADOS -->
+<div class="product-card" tabindex="0">
+<span class="tag oferta">Oferta</span>
+<img alt="Protetor Solar FPS 50" src="../img/protetor-Solar.png"/>
+<h3>Protetor Solar FPS 50</h3>
+<div class="avaliacao"><span class="estrelas">★★★★★</span> <span class="numero-avaliacoes">(38)</span></div>
+<div class="preco">
+<span class="preco-antigo">R$45,90</span>
+<span class="preco-novo">R$32,90</span>
+</div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="32.90" data-produto="Protetor Solar FPS 50"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Protetor Solar FPS 50"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<span class="tag novo">Novo</span>
+<img alt="Vitamina C 1000mg" src="../img/vitamina C.png"/>
+<h3>Vitamina C 1000mg</h3>
+<div class="avaliacao"><span class="estrelas">★★★★☆</span> <span class="numero-avaliacoes">(21)</span></div>
+<div class="preco"><span class="preco-novo">R$28,50</span></div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="28.50" data-produto="Vitamina C 1000mg"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Vitamina C 1000mg"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+<div class="product-card" tabindex="0">
+<span class="tag desconto">-15%</span>
+<img alt="Fralda Pampers P" src="../img/fralda pampers.png"/>
+<h3>Fralda Pampers P - 30un</h3>
+<div class="avaliacao"><span class="estrelas">★★★★★</span> <span class="numero-avaliacoes">(67)</span></div>
+<div class="preco">
+<span class="preco-antigo">R$39,90</span>
+<span class="preco-novo">R$33,90</span>
+</div>
+<div class="card-actions">
+<button class="botao add-carrinho" data-preco="33.90" data-produto="Fralda Pampers P - 30un"><i class="fas fa-cart-plus"></i> Adicionar</button>
+<button class="botao detalhes" data-produto="Fralda Pampers P - 30un"><i class="fas fa-search"></i> Ver Detalhes</button>
+</div>
+</div>
+</section>
+<!-- MODAL DE DETALHES RÁPIDOS -->
+<div aria-modal="true" class="modal-produto" id="modal-produto" role="dialog" style="display:none;" tabindex="-1">
+<div class="modal-content">
+<button aria-label="Fechar detalhes" class="modal-close"><i class="fas fa-times"></i></button>
+<div class="modal-img"><img alt="" id="modal-img" src=""/></div>
+<div class="modal-info">
+<h2 id="modal-title"></h2>
+<div class="modal-avaliacao" id="modal-avaliacao"></div>
+<div class="modal-preco" id="modal-preco"></div>
+<p id="modal-desc"></p>
+<button class="botao add-carrinho-modal" id="modal-add-carrinho"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</button>
+</div>
+</div>
+</div>
+<section class="sectionFooter">
+<div id="footer1">
+<ul>
+<p class="central"> Serviços </p>
+<li> <a href="#"> Farmacêuticos Farmacamp </a></li>
+<li> <a href="#"> Nossas Lojas</a></li>
+<li><a href="#"> Progamas dos laboratórios</a></li>
+<p class="central"> Institucional </p>
+<li> <a href="#"> Nossa História </a></li>
+<li> <a href="#"> Logística Reversa de Medicamentos</a></li>
+<li><a href="#">Trabalhe conosco</a></li>
+<li><a href="#">Imprensa</a></li>
+<li><a href="#">Política de Privacidade</a></li>
+<li><a href="#">Política de cookies</a></li>
+</ul>
+</div>
+<div id="footer2">
+<ul>
+<p class="central"> Minha Conta </p>
+<li> <a href="#"> Como Comprar no Site </a></li>
+<li> <a href="#"> Formas de pagamentos disponíveis</a></li>
+<li><a href="#"> Prazo de reembolso</a></li>
+<li><a href="#">Troca ou devolução</a></li>
+<p class="central">Outras Informações </p>
+<li> <a href="#"> Logística reversa</a></li>
+<li><a href="#"> Regulamentações da ANVISA</a></li>
+<li><a href="#"> Manual do usuário</a></li>
+</ul>
+</div>
+<div id="footer3">
+<ul>
+<p class="central"> Central de Atendimento </p>
+<li> <img alt=" ícone de telefone " src="https://img.icons8.com/material-sharp/24/000000/no-phones--v1.png"/> (11) 94575-2271</li>
+<li><img alt="ícone de email " src="https://img.icons8.com/material-outlined/24/000000/email.png"/>
+                    contato@Farmacamp.br </li>
+<li><img alt="ícone de servidor " src="https://img.icons8.com/material/24/000000/internet.png"/>
+                    www.farmacamp.com.br </li>
+<li><img alt="ícone de mapa" src="https://img.icons8.com/material/24/000000/marker--v1.png"/><a href="#">
+                        Rua senac, Campinas - São paulo, Brasil, CEP 00000-000</a>
+</li>
+<p class="central" id="formasPg"> Formas de pagamento:</p>
+<div class="pagamento">
+<li>
+<img alt="ícone do cartão " src="https://img.icons8.com/fluency/48/000000/mastercard.png"/>
+</li>
+</div>
+<div class="pagamento">
+<li>
+<img alt="ícone do cartão" src="https://img.icons8.com/fluency/48/000000/visa.png"/>
+</li>
+</div>
+<div class="pagamento">
+<li>
+<img src="https://img.icons8.com/fluency/48/000000/card-in-use-1.png"/>
+</li>
+</div>
+<div class="pagamento">
+<li>
+<img src="https://img.icons8.com/color/50/000000/mercado-pago.png"/>
+</li>
+</div>
+<div class="pagamento">
+<li>
+<img src="https://img.icons8.com/color/48/000000/paypal.png"/>
+</li>
+</div>
+<div class="pagamento">
+<li><img alt="ícone de pagamento" src="https://img.icons8.com/color/48/000000/boleto-bankario.png"/>
+</li></div>
+<div class="pagamento">
+<li>
+<img src="https://img.icons8.com/fluency/48/000000/diners-club.png"/>
+</li>
+</div>
+</ul>
+</div>
+</section>
+<p class="rodape">
+      Copyright © 2025 FARMACAMP | Todos os direitos reservados
+  </p>
+<script>
+  function adicionarAoCarrinho(produtoNome, produtoPreco) {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    const produto = { nome: produtoNome, preco: produtoPreco };
+    carrinho.push(produto);
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    atualizarCarrinho();
+  }
+
+  function atualizarCarrinho() {
+    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    const cartCount = document.getElementById('cart-count');
+    cartCount.textContent = carrinho.length;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    atualizarCarrinho();
+  });
+
+  const botoesAdicionar = document.querySelectorAll('.botao');
+  botoesAdicionar.forEach(botao => {
+    botao.addEventListener('click', function(e) {
+      e.preventDefault();
+      const produtoNome = this.getAttribute('data-produto');
+      const produtoPreco = this.getAttribute('data-preco');
+      adicionarAoCarrinho(produtoNome, produtoPreco);
+    });
+  });
+</script>
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5500000000000" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white;
+          padding: 12px 16px; border-radius: 50%; font-size: 24px; z-index: 999;" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<!-- Script para o banner de cookies -->
+<script>
+  function aceitarCookies() {
+    document.getElementById('cookie-banner').style.display = 'none';
+    localStorage.setItem('cookiesAceitos', 'true');
+  }
+  window.onload = function () {
+    if (localStorage.getItem('cookiesAceitos') === 'true') {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  };
+</script>
+<!-- AOS (opcional, para animações) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- VLibras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script src="../js/script.js"></script>
+<!-- Botão no HTML -->
+<button id="darkModeToggle" title="Alternar tema">🌙</button>
+<script>
+  // Pega o botão que tem o ID 'darkModeToggle'
+  const toggleBtn = document.getElementById('darkModeToggle');
+  // Quando o botão for clicado, faça isso:
+  toggleBtn.addEventListener('click', () => {
+    // Adiciona ou remove a classe 'dark-theme' no corpo da página
+    document.body.classList.toggle('dark-theme');
+  });
+</script>
+<script>
+  // Modal de detalhes rápidos
+  const modal = document.getElementById('modal-produto');
+  const modalImg = document.getElementById('modal-img');
+  const modalTitle = document.getElementById('modal-title');
+  const modalAvaliacao = document.getElementById('modal-avaliacao');
+  const modalPreco = document.getElementById('modal-preco');
+  const modalDesc = document.getElementById('modal-desc');
+  const modalAdd = document.getElementById('modal-add-carrinho');
+  let produtoAtual = null;
+  const produtosDetalhes = {
+    'Paracetamol 500mg': {
+      img: 'img/paracetamol.png',
+      title: 'Paracetamol 500mg',
+      avaliacao: '★★★★★ (42 avaliações)',
+      preco: '<span class="preco-antigo">R$14,90</span> <span class="preco-novo">R$9,90</span>',
+      desc: 'Analgésico e antitérmico para alívio de dores e febre. Uso adulto e pediátrico.'
+    },
+    'Tadalafila': {
+      img: 'img/tadala.png',
+      title: 'Tadalafila',
+      avaliacao: '★★★★☆ (12 avaliações)',
+      preco: '<span class="preco-novo">R$12,50</span>',
+      desc: 'Indicado para disfunção erétil. Uso sob prescrição médica.'
+    },
+    'Dipirona Gotas': {
+      img: 'img/dipirona.png',
+      title: 'Dipirona Gotas',
+      avaliacao: '★★★★☆ (31 avaliações)',
+      preco: '<span class="preco-novo">R$7,80</span>',
+      desc: 'Analgésico e antitérmico em gotas. Alívio rápido de dores e febre.'
+    },
+    'Shampo': {
+      img: 'img/transferir (5).jpg',
+      title: 'Shampo',
+      avaliacao: '★★★★★ (19 avaliações)',
+      preco: '<span class="preco-antigo">R$29,90</span> <span class="preco-novo">R$14,90</span>',
+      desc: 'Shampo para todos os tipos de cabelo. Limpeza e hidratação.'
+    },
+    'Cetaphil 127g': {
+      img: 'img/sabonete em barra.png',
+      title: 'Sabonete Em Barra Cetaphil',
+      avaliacao: '★★★★★ (23 avaliações)',
+      preco: '<span class="preco-antigo">R$34,90</span> <span class="preco-novo">R$31,59</span>',
+      desc: 'Sabonete em barra para pele sensível. Limpa sem ressecar.'
+    },
+    'Antigripal 500mg': {
+      img: 'img/antigripal.png',
+      title: 'Antigripal 500mg',
+      avaliacao: '★★★☆☆ (8 avaliações)',
+      preco: '<span class="preco-novo">R$18,00</span>',
+      desc: 'Alívio dos sintomas de gripes e resfriados. Uso adulto.'
+    },
+    'Creme Hidratante': {
+      img: 'img/creme hidratante.png',
+      title: 'Creme Hidratante',
+      avaliacao: '★★★★☆ (15 avaliações)',
+      preco: '<span class="preco-novo">R$22,50</span>',
+      desc: 'Hidratação profunda para todos os tipos de pele.'
+    },
+    'Pomada Anti-inflamatória': {
+      img: 'img/pomada Anti-inflamatoria.png',
+      title: 'Pomada Anti-inflamatória',
+      avaliacao: '★★★☆☆ (6 avaliações)',
+      preco: '<span class="preco-novo">R$15,90</span>',
+      desc: 'Alívio de dores musculares e inflamações locais.'
+    },
+    'Álcool Gel 500ml': {
+      img: 'img/Álcool Gel.png',
+      title: 'Álcool Gel 500ml',
+      avaliacao: '★★★★★ (27 avaliações)',
+      preco: '<span class="preco-novo">R$10,00</span>',
+      desc: 'Higienização das mãos. Elimina 99,9% dos germes.'
+    }
+  };
+  document.querySelectorAll('.botao.detalhes').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const prod = this.getAttribute('data-produto');
+      const det = produtosDetalhes[prod];
+      if(det) {
+        modalImg.src = det.img;
+        modalImg.alt = det.title;
+        modalTitle.textContent = det.title;
+        modalAvaliacao.textContent = '';
+        modalAvaliacao.innerHTML = det.avaliacao;
+        modalPreco.innerHTML = det.preco;
+        modalDesc.textContent = det.desc;
+        produtoAtual = prod;
+        modal.style.display = 'flex';
+        modal.focus();
+      }
+    });
+  });
+  document.querySelector('.modal-close').onclick = function() {
+    modal.style.display = 'none';
+  };
+  modal.addEventListener('keydown', function(e) {
+    if(e.key === 'Escape') modal.style.display = 'none';
+  });
+  // Adicionar ao carrinho (modal)
+  modalAdd.onclick = function() {
+    alert('Produto adicionado ao carrinho!');
+    modal.style.display = 'none';
+  };
+  // Adicionar ao carrinho (cards)
+  document.querySelectorAll('.add-carrinho').forEach(btn => {
+    btn.addEventListener('click', function() {
+      btn.classList.add('added');
+      btn.innerHTML = '<i class="fas fa-check"></i> Adicionado!';
+      setTimeout(()=>{
+        btn.classList.remove('added');
+        btn.innerHTML = '<i class="fas fa-cart-plus"></i> Adicionar';
+      }, 1500);
+    });
+  });
+  // Limpar filtros
+  document.querySelector('.filtro-limpar').onclick = function() {
+    document.querySelectorAll('.filtro-produtos select').forEach(sel => sel.selectedIndex = 0);
+  };
+</script>
+</body>
+</html>

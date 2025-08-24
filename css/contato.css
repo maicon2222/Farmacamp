@@ -1,0 +1,430 @@
+/* ====================================
+   ESTILOS ESPECÍFICOS DA PÁGINA DE CONTATO
+==================================== */
+
+/* ====================================
+   CONTEÚDO PRINCIPAL
+==================================== */
+.main-content {
+  padding: 40px 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  color: #b30c13;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* ====================================
+   SERVIÇOS
+==================================== */
+.services h3 {
+  text-align: center;
+  color: #b30c13;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-left: 5px solid #b30c13;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.card h4 {
+  color: #b30c13;
+  margin-bottom: 10px;
+}
+
+/* ====================================
+   CONTATO
+==================================== */
+.contact {
+  background-color: #fff;
+  padding: 50px 20px;
+  margin-top: 40px;
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact h3 {
+  text-align: center;
+  color: #b30c13;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #b30c13;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #b30c13;
+}
+
+button[type="submit"] {
+  background-color: #b30c13;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #8b0000;
+}
+
+/* ====================================
+   RODAPÉ ESPECÍFICO
+==================================== */
+.rodape {
+  background-color: #333;
+  color: #ffd400;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+}
+
+/* --- PADRONIZAÇÃO DO BOTÃO DE BUSCA E LUPA --- */
+.search-btn {
+  background-color: #ffd400; /* Amarelo igual ao início */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50%; /* Botão circular */
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn i {
+  color: #b30c13; /* Vermelho igual ao início */
+  font-size: 16px;
+}
+
+.search-btn:focus, .search-btn:hover {
+  background-color: #ffd400;
+  outline: none;
+}
+
+/* HERO de contato */
+.contato-hero {
+  background: linear-gradient(90deg, #ffd400 0%, #b30c13 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px 40px 20px;
+  position: relative;
+}
+.contato-hero-content {
+  position: relative;
+  z-index: 2;
+}
+.contato-hero-content i {
+  font-size: 3.5rem;
+  margin-bottom: 12px;
+  color: #fffbe6;
+  filter: drop-shadow(0 2px 8px #b30c1344);
+}
+.contato-hero-content h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.contato-hero-content p {
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}
+
+/* CARDS DE CONTATO RÁPIDO */
+.contato-rapido {
+  background: #fffbe6;
+  padding: 40px 20px 30px 20px;
+}
+.contato-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.contato-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px #ffd40022;
+  padding: 32px 18px 28px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+.contato-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px #ffd40044;
+}
+.contato-card i {
+  font-size: 2.2rem;
+  color: #b30c13;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+.contato-card:hover i {
+  transform: scale(1.15) rotate(-8deg);
+}
+.contato-card h3 {
+  color: #b30c13;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+.contato-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+.contato-btn {
+  background: #ffd400;
+  color: #b30c13;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #ffd40033;
+  cursor: pointer;
+}
+.contato-btn:hover, .contato-btn:focus {
+  background: #b30c13;
+  color: #fff;
+  outline: 2px solid #ffd400;
+}
+
+/* FORMULÁRIO DE CONTATO MODERNO */
+.contato-form-section {
+  background: #fff;
+  padding: 50px 20px 40px 20px;
+  text-align: center;
+}
+.contato-form-section h2 {
+  color: #b30c13;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+.contato-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fffbe6;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #ffd40022;
+  padding: 32px 18px 24px 18px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-group label {
+  color: #b30c13;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s;
+  color: #333;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ffd400;
+}
+.contato-enviar-btn {
+  background: #b30c13;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #ffd40033;
+}
+.contato-enviar-btn:hover, .contato-enviar-btn:focus {
+  background: #ffd400;
+  color: #b30c13;
+  outline: 2px solid #b30c13;
+}
+.contato-feedback {
+  margin-top: 10px;
+  color: #388e3c;
+  font-weight: 600;
+  background: #eaffea;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* MAPA INTEGRADO */
+.contato-mapa {
+  background: #fff;
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+}
+.contato-mapa h2 {
+  color: #b30c13;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+.mapa-container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #ffd40022;
+}
+
+/* FAQ DE CONTATO */
+.contato-faq {
+  background: #fffbe6;
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+}
+.contato-faq h2 {
+  color: #b30c13;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+.faq-list {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.faq-item {
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px #fbd10222;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #b30c13;
+  padding: 16px 22px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.faq-question:focus {
+  box-shadow: 0 0 0 3px #ffd40099;
+}
+.faq-question.aberta, .faq-question:hover {
+  background: #ffe066;
+}
+.faq-question i {
+  transition: transform 0.3s;
+}
+.faq-question .faq-rotate {
+  transform: rotate(90deg) scale(1.2);
+}
+.faq-answer {
+  display: none;
+  padding: 0 22px 16px 22px;
+  color: #444;
+  font-size: 1rem;
+  background: #fffbe6;
+  border-left: 3px solid #ffd400;
+  animation: fadeIn 0.3s;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .contato-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .contato-hero-content h1 { font-size: 1.3rem; }
+  .contato-cards { grid-template-columns: 1fr; }
+  .contato-form { padding: 18px 4px 12px 4px; }
+  .mapa-container { max-width: 100%; }
+}

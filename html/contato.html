@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FARMACAMP | Contato</title>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/contato.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Header igual ao index.html -->
+<header>
+<div class="logo-container">
+<h1>Farmacamp</h1>
+</div>
+<nav class="header-menu">
+<a href="index.html">Início</a>
+<a href="produtos.html">Produtos</a>
+<a href="vantagens.html">Vantagens</a>
+<a href="contato.html">Contato</a>
+</nav>
+<div class="search-container">
+<input placeholder="Pesquisar..." type="text"/>
+<button class="search-btn" type="submit">
+<i class="fa fa-search"></i>
+</button>
+</div>
+<div class="user-cart-container">
+<a class="user-account" href="minha-conta.html">
+<i class="fa fa-user"></i> Minha Conta
+            </a>
+<a class="user-cart" href="carrinho.html">
+<i class="fa fa-shopping-cart"></i> Meu Carrinho
+            </a>
+</div>
+</header>
+<!-- HERO de contato -->
+<section class="contato-hero" data-aos="fade-up">
+<div class="contato-hero-content">
+<i class="fas fa-headset"></i>
+<h1>Fale com a Farmacamp</h1>
+<p>Estamos prontos para te ajudar! Tire dúvidas, envie sugestões ou solicite atendimento personalizado.</p>
+</div>
+</section>
+<!-- Cards de contato rápido -->
+<section class="contato-rapido" data-aos="fade-up" data-aos-delay="100">
+<div class="contato-cards">
+<div class="contato-card">
+<i class="fab fa-whatsapp"></i>
+<h3>WhatsApp</h3>
+<p>Atendimento rápido e prático.</p>
+<a class="contato-btn" href="https://wa.me/5511945752271" target="_blank">Conversar</a>
+</div>
+<div class="contato-card">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Endereço</h3>
+<p>Rua Senac, Campinas - SP</p>
+<a class="contato-btn" href="https://goo.gl/maps/xyz" target="_blank">Ver no Mapa</a>
+</div>
+<div class="contato-card">
+<i class="fas fa-phone-alt"></i>
+<h3>Telefone Fixo</h3>
+<p>Central de atendimento: (19) 4002-8922</p>
+<a class="contato-btn" href="tel:1940028922">Ligar</a>
+</div>
+<div class="contato-card">
+<i class="fas fa-phone"></i>
+<h3>Telefone</h3>
+<p>Ligue para nossa central de atendimento.</p>
+<a class="contato-btn" href="tel:11945752271">Ligar</a>
+</div>
+<div class="contato-card">
+<i class="fas fa-envelope"></i>
+<h3>E-mail</h3>
+<p>Envie sua mensagem para nossa equipe.</p>
+<a class="contato-btn" href="mailto:contato@farmacamp.br">Enviar E-mail</a>
+</div>
+<!-- Novo card: Chat Online -->
+<div class="contato-card">
+<i class="fas fa-comments"></i>
+<h3>Chat Online</h3>
+<p>Converse com um atendente em tempo real.</p>
+<a class="contato-btn" href="#">Abrir Chat</a>
+</div>
+</div>
+</section>
+<!-- Formulário de contato moderno -->
+<section class="contato-form-section" data-aos="fade-up" data-aos-delay="200">
+<h2>Envie sua mensagem</h2>
+<form autocomplete="off" class="contato-form">
+<div class="form-group">
+<label for="nome"><i class="fas fa-user"></i> Nome</label>
+<input id="nome" name="nome" placeholder="Seu nome" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+<input id="email" name="email" placeholder="Seu e-mail" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="assunto"><i class="fas fa-comment-dots"></i> Assunto</label>
+<input id="assunto" name="assunto" placeholder="Assunto" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="mensagem"><i class="fas fa-edit"></i> Mensagem</label>
+<textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required="" rows="5"></textarea>
+</div>
+<button class="contato-enviar-btn" type="submit">Enviar Mensagem</button>
+<div class="contato-feedback" style="display:none;"></div>
+</form>
+</section>
+<!-- Mapa integrado -->
+<section class="contato-mapa" data-aos="fade-up" data-aos-delay="300">
+<h2>Onde estamos</h2>
+<div class="mapa-container">
+<iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Senac,+Campinas,+SP&amp;output=embed" style="border:0; border-radius:12px;" title="Mapa Farmacamp" width="100%"></iframe>
+</div>
+</section>
+<!-- FAQ de contato -->
+<section class="contato-faq" data-aos="fade-up" data-aos-delay="400">
+<h2>Perguntas Frequentes</h2>
+<div class="faq-list">
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question"><i class="fas fa-truck"></i> Como funciona a entrega?</button>
+<div class="faq-answer">Entregamos em todo o Brasil, com opções de entrega expressa para regiões selecionadas. Consulte o prazo ao finalizar sua compra.</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question"><i class="fas fa-shield-alt"></i> É seguro comprar na Farmacamp?</button>
+<div class="faq-answer">Sim! Utilizamos criptografia e seguimos as melhores práticas de segurança para proteger seus dados.</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question"><i class="fas fa-user-md"></i> Posso falar com um farmacêutico?</button>
+<div class="faq-answer">Claro! Nosso time de farmacêuticos está disponível para tirar dúvidas pelo chat ou telefone.</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question"><i class="fas fa-credit-card"></i> Quais formas de pagamento são aceitas?</button>
+<div class="faq-answer">Aceitamos cartões de crédito, débito, boleto, Pix e carteiras digitais como PayPal e Mercado Pago.</div>
+</div>
+</div>
+</section>
+<!-- Rodapé igual ao index.html -->
+<section class="sectionFooter">
+<div id="footer1">
+<ul>
+<p class="central"> Serviços </p>
+<li> <a href="#"> Farmacêuticos Farmacamp </a></li>
+<li> <a href="#"> Nossas Lojas</a></li>
+<li><a href="#"> Progamas dos laboratórios</a></li>
+<p class="central"> Institucional </p>
+<li> <a href="#"> Nossa História </a></li>
+<li> <a href="#"> Logística Reversa de Medicamentos</a></li>
+<li><a href="#">Trabalhe conosco</a></li>
+<li><a href="#">Imprensa</a></li>
+<li><a href="#">Política de Privacidade</a></li>
+<li><a href="#">Política de cookies</a></li>
+</ul>
+</div>
+<div id="footer2">
+<ul>
+<p class="central"> Minha Conta </p>
+<li> <a href="#"> Como Comprar no Site </a></li>
+<li> <a href="#"> Formas de pagamentos disponíveis</a></li>
+<li><a href="#"> Prazo de reembolso</a></li>
+<li><a href="#">Troca ou devolução</a></li>
+<p class="central">Outras Informações </p>
+<li> <a href="#"> Logística reversa</a></li>
+<li><a href="#"> Regulamentações da ANVISA</a></li>
+<li><a href="#"> Manual do usuário</a></li>
+</ul>
+</div>
+<div id="footer3">
+<ul>
+<p class="central"> Central de Atendimento </p>
+<li> <img alt=" ícone de telefone " src="https://img.icons8.com/material-sharp/24/000000/no-phones--v1.png"/> (11) 94575-2271</li>
+<li><img alt="ícone de email " src="https://img.icons8.com/material-outlined/24/000000/email.png"/> contato@Farmacamp.br </li>
+<li><img alt="ícone de servidor " src="https://img.icons8.com/material/24/000000/internet.png"/> www.farmacamp.com.br </li>
+<li><img alt="ícone de mapa" src="https://img.icons8.com/material/24/000000/marker--v1.png"/><a href="#"> Rua senac, Campinas - São paulo, Brasil, CEP 00000-000</a></li>
+<p class="central" id="formasPg"> Formas de pagamento:</p>
+<div class="pagamento">
+<li><img alt="ícone do cartão " src="https://img.icons8.com/fluency/48/000000/mastercard.png"/></li>
+</div>
+<div class="pagamento">
+<li><img alt="ícone do cartão" src="https://img.icons8.com/fluency/48/000000/visa.png"/></li>
+</div>
+<div class="pagamento">
+<li><img src="https://img.icons8.com/fluency/48/000000/card-in-use-1.png"/></li>
+</div>
+<div class="pagamento">
+<li><img src="https://img.icons8.com/color/50/000000/mercado-pago.png"/></li>
+</div>
+<div class="pagamento">
+<li><img src="https://img.icons8.com/color/48/000000/paypal.png"/></li>
+</div>
+<div class="pagamento">
+<li><img alt="ícone de pagamento" src="https://img.icons8.com/color/48/000000/boleto-bankario.png"/></li>
+</div>
+<div class="pagamento">
+<li><img src="https://img.icons8.com/fluency/48/000000/diners-club.png"/></li>
+</div>
+</ul>
+</div>
+</section>
+<p class="rodape">
+        Copyright © 2025 FARMACAMP | Todos os direitos reservados
+    </p>
+<!-- Cookie banner -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; z-index: 1000;">
+<p>Usamos cookies para melhorar sua experiência. <a href="#" style="color: #aaf;">Saiba mais</a></p>
+<button onclick="aceitarCookies()" style="margin-top: 5px; padding: 5px 10px;">Aceitar</button>
+</div>
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5500000000000" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white;
+            padding: 12px 16px; border-radius: 50%; font-size: 24px; z-index: 999;" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<!-- Script para o banner de cookies -->
+<script>
+      function aceitarCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        localStorage.setItem('cookiesAceitos', 'true');
+      }
+      window.onload = function () {
+        if (localStorage.getItem('cookiesAceitos') === 'true') {
+          document.getElementById('cookie-banner').style.display = 'none';
+        }
+      };
+    </script>
+<!-- AOS (opcional, para animações) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+      AOS.init();
+    </script>
+<!-- VLibras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+<script src="../js/script.js"></script>
+<!-- Botão no HTML -->
+<button id="darkModeToggle" title="Alternar tema">🌙</button>
+<script>
+      // Pega o botão que tem o ID 'darkModeToggle'
+      const toggleBtn = document.getElementById('darkModeToggle');
+      // Quando o botão for clicado, faça isso:
+      toggleBtn.addEventListener('click', () => {
+        // Adiciona ou remove a classe 'dark-theme' no corpo da página
+        document.body.classList.toggle('dark-theme');
+      });
+    </script>
+<script>
+      // FAQ interativo
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !expanded);
+          const answer = this.nextElementSibling;
+          answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+          this.querySelector('i').classList.toggle('faq-rotate');
+        });
+      });
+      // Feedback do formulário
+      const contatoForm = document.querySelector('.contato-form');
+      if(contatoForm) {
+        contatoForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const feedback = this.querySelector('.contato-feedback');
+          feedback.style.display = 'block';
+          feedback.innerHTML = '<i class="fas fa-check-circle"></i> Mensagem enviada com sucesso! Em breve nossa equipe entrará em contato.';
+          this.reset();
+          setTimeout(()=>{feedback.style.display='none';}, 5000);
+        });
+      }
+    </script>
+</body>
+</html>
